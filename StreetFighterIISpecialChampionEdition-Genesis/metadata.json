@@ -1,0 +1,6 @@
+{
+  "default_state": "rvk",
+  "video": {
+    "frames_per_second": 10.0
+  }
+}

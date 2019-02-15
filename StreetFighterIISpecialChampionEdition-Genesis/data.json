@@ -1,0 +1,88 @@
+{
+  "info": {
+    "continuetimer": {
+      "address": 16750378,
+      "type": ">u1"
+    },
+    "first_player_health": {
+      "address": 16744512,
+      "type": ">i2"
+    },
+    "second_player_health": {
+      "address": 16745152,
+      "type": ">i2"
+    },
+    "first_player_matches_won": {
+      "address": 16744922,
+      "type": "|u1"
+    },
+    "second_player_matches_won": {
+      "address": 16745559,
+      "type": ">u4"
+    },
+    "first_player_score": {
+      "address": 16744936,  
+      "type": ">d4"
+    },
+    "second_player_score": {
+      "address": 16745576,  
+      "type": ">d4"
+    },
+    "first_player_x": {
+      "address": 16744454,
+      "type": ">u2"
+    },
+    "first_player_y": {
+      "address": 16744458,
+      "type": ">u2"
+    },
+    "first_player_attack_x": {
+      "address": 16760698,
+      "type": ">u2"
+    },
+    "second_player_x": {
+      "address": 16745094,
+      "type": ">u2"
+    },
+    "second_player_y": {
+      "address": 16745098,
+      "type": ">u2"
+    },
+    "second_player_attack_x": {
+      "address": 16760702,
+      "type": ">u2"
+    },
+    "distance_x_between_players": {
+      "address": 16744652,
+      "type": ">u2"
+    },
+    "distance_y_between_players": {
+      "address": 16744654,
+      "type": ">u2"
+    },
+    "is_first_player_jangpoong": {
+      "address": 16744650,
+      "type": ">u2"
+    },
+    "is_first_player_jangpoong_x": {
+      "address": 16745734,
+      "type": ">u2"
+    },
+    "is_first_player_jangpoong_y": {
+      "address": 16745802,
+      "type": ">u2"
+    },
+    "is_second_player_jangpoong": {
+      "address": 16745290,
+      "type": ">u2"
+    },
+    "is_second_player_jangpoong_x": {
+      "address": 16745862,
+      "type": ">u2"
+    },
+    "is_second_player_jangpoong_y": {
+      "address": 16745930,
+      "type": ">u2"
+    }
+  }
+}

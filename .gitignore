@@ -1,0 +1,6 @@
+/gym-retro
+.envrc
+.python-version
+/venv
+.ipynb_checkpoints/
+/models
