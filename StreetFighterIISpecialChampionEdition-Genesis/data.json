@@ -83,6 +83,14 @@
     "is_second_player_jangpoong_y": {
       "address": 16745930,
       "type": ">u2"
+    },
+    "is_first_player_atackking": {
+      "address": 16744638,
+      "type": ">u2"
+    },
+    "is_second_player_atackking": {
+      "address": 16745278,
+      "type": ">u2"
     }
   }
 }
