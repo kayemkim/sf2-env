@@ -8,7 +8,7 @@ function check_reward_by_health()
   previous_agent_health = data.first_player_health
   previous_cpu_health = data.second_player_health
     
-  return cpu_health_delta - agent_health_delta
+  return cpu_health_delta - agent_health_delta - 1
 end
 
 function done_check()
