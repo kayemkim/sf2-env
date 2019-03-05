@@ -91,6 +91,10 @@
     "is_second_player_atackking": {
       "address": 16745278,
       "type": ">u2"
+    },
+    "first_player_action_kind": {
+      "address": 16744536,
+      "type": ">u2"
     }
   }
 }
