@@ -1,0 +1,17 @@
+{
+  "done": {
+    "script": "lua:done_check_sunppang"
+  },
+  "reward": {
+    "script": "lua:check_reward_by_health"
+  },
+  "scripts": [
+    "script.lua"
+  ],
+  "crop": [0, 16, 256, 200],
+  "actions": [
+      [[], ["UP"], ["DOWN"]],
+      [[], ["LEFT"], ["RIGHT"]],
+      [[], ["A"], ["B"], ["C"], ["X"], ["Y"], ["Z"]]
+  ]
+}

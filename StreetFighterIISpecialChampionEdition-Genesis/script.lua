@@ -8,7 +8,7 @@ function check_reward_by_health()
   previous_agent_health = data.first_player_health
   previous_cpu_health = data.second_player_health
     
-  return cpu_health_delta - agent_health_delta - 1
+  return cpu_health_delta - agent_health_delta
 end
 
 function done_check()
@@ -23,3 +23,12 @@ function done_check()
   end
   return false
 end
+
+function done_check_sunppang()
+  if data.first_player_health ~= data.second_player_health then
+    return true
+  end
+  return false
+end
+
+

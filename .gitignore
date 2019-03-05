@@ -5,3 +5,6 @@
 .ipynb_checkpoints/
 /models
 /tensorboard
+**/models
+nohup.out
+*.log
