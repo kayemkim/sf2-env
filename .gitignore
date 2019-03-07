@@ -7,4 +7,5 @@
 /tensorboard
 **/models
 nohup.out
+*.out
 *.log
