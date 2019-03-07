@@ -1,6 +1,6 @@
 python small_network.py \
     --rom_path '/root/sf2-workspace/sf2-env/StreetFighterIISpecialChampionEdition-Genesis' \
-    --model_path '/root/sf2-workspace/sf2-env/sf2/models/64_nodes_decay_normal_15000_ep/' \
+    --model_path '/root/sf2-workspace/sf2-env/sf2/models/64_nodes_decay_slow_10000_ep/' \
     --scenario 'scenario' \
     --stack_size 5 \
      --learning_rate 0.005 \
