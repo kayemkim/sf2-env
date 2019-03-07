@@ -2,6 +2,7 @@ import os
 import random
 import argparse
 import json
+import time
 
 import tensorflow as tf      # Deep Learning library
 import numpy as np           # Handle matrices
@@ -36,7 +37,7 @@ args = parser.parse_args()
 
 rom_path = args.rom_path
 
-model_path = '/root/sf2-workspace/sf2-env/sf2/models/test/'
+model_path = args.model_path
 os.makedirs(os.path.dirname(model_path), exist_ok=True)
 
 parameter_path = model_path + 'parameters.conf'
@@ -395,6 +396,8 @@ parameter_file = open(parameter_path, 'w')
 parameter_file.write(json.dumps(vars(args), indent=4, sort_keys=True))
 parameter_file.close()
 
+log_file.write('start_time : ' + time.strftime("%y-%m-%d %H:%M:%S") + '\n')
+
 if training == True:
     with tf.Session() as sess:
         # Initialize the variables
@@ -404,6 +407,8 @@ if training == True:
         decay_step = 0
         
         for episode in range(total_episodes):
+            episode_start_time = time.time()
+            
             # Set step to 0
             step = 0
             
@@ -447,9 +452,6 @@ if training == True:
                     next_state, stacked_frames = stack_frames(stacked_frames, next_state, False)
                     next_state = next_state.flatten()
 
-                    # Set step = max_steps to end the episode
-                    step = max_steps
-
                     # Get the total reward of the episode
                     total_reward = np.sum(episode_rewards)
                     
@@ -458,8 +460,11 @@ if training == True:
                     else:
                         episode_result = 'lose'
 
-                    result_str = '{' + '"episode":{}, "reward":{}, "explore": {:.4f}, "loss": {:.4f}, "result": "{}"'.format(episode+1, total_reward, explore_probability, loss, episode_result) + '}'
+                    result_str = '{' + '"episode":{}, "reward":{}, "explore": {:.4f}, "loss": {:.4f}, "result": "{}", "time": {}, "steps": {}'.format(episode+1, total_reward, explore_probability, loss, episode_result, time.time() - episode_start_time, step) + '}'
                     print(result_str)
+                    
+                    # Set step = max_steps to end the episode
+                    step = max_steps
                     
                     log_file.write(result_str + '\n')
 
@@ -536,6 +541,8 @@ if training == True:
             if episode % 5 == 4:
                 save_path = saver.save(sess, model_path)
                 print("Model Saved")
+
+log_file.write('end_time : ' + time.strftime("%y-%m-%d %H:%M:%S") + '\n')
                 
 log_file.close()
 env.close()

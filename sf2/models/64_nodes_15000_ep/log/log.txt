@@ -1,0 +1,7 @@
+start_time : 19-03-07 14:23:56
+{"episode":1, "reward":-99.0, "explore": 0.9979, "loss": 30.5749, "result": "lose", "time": 2.3200926780700684, "steps": 431}
+{"episode":2, "reward":-152.0, "explore": 0.9954, "loss": 8.1892, "result": "lose", "time": 2.6012654304504395, "steps": 507}
+{"episode":3, "reward":-67.0, "explore": 0.9929, "loss": 35.9492, "result": "lose", "time": 2.571791887283325, "steps": 492}
+{"episode":4, "reward":-89.0, "explore": 0.9904, "loss": 31.2023, "result": "lose", "time": 2.6860156059265137, "steps": 523}
+{"episode":5, "reward":-150.0, "explore": 0.9886, "loss": 42.3452, "result": "lose", "time": 1.8719103336334229, "steps": 361}
+end_time : 19-03-07 14:24:09
