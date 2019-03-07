@@ -3,9 +3,7 @@
 .python-version
 /venv
 .ipynb_checkpoints/
-/models
 /tensorboard
-**/models
 nohup.out
 *.out
 *.log
