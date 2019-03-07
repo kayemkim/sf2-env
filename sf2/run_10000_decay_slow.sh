@@ -4,7 +4,7 @@ python small_network.py \
     --scenario 'scenario' \
     --stack_size 5 \
      --learning_rate 0.005 \
-    --total_episodes 15000 \
+    --total_episodes 10000 \
     --batch_size 64 \
     --explore_start 1.0 \
     --explore_stop 0.01 \
