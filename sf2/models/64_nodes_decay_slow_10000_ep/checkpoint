@@ -1,0 +1,2 @@
+model_checkpoint_path: "/root/sf2-workspace/sf2-env/sf2/models/64_nodes_decay_slow_10000_ep/"
+all_model_checkpoint_paths: "/root/sf2-workspace/sf2-env/sf2/models/64_nodes_decay_slow_10000_ep/"
