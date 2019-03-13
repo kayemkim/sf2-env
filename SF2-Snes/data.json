@@ -1,0 +1,44 @@
+{
+  "info": {
+    "is_p1_crouching": {
+      "address": 1348,
+      "type": "<u1"
+    },
+    "is_p1_jumping": {
+      "address": 1514,
+      "type": "<u1"
+    },
+    "is_p2_crouching": {
+      "address": 1860,
+      "type": "<u1"
+    },
+    "p1_in_move": {
+      "address": 1513,
+      "type": ">u1"
+    },
+    "p1_move": {
+      "address": 1509,
+      "type": "<u1"
+    },
+    "p1_x": {
+      "address": 34,
+      "type": "<u2"
+    },
+    "p2_in_move": {
+      "address": 2025,
+      "type": ">u1"
+    },
+    "p2_move": {
+      "address": 2021,
+      "type": ">u1"
+    },
+    "p_hight_delta": {
+      "address": 1517,
+      "type": "|u1"
+    },
+    "p_width_delta": {
+      "address": 2027,
+      "type": "|u1"
+    }
+  }
+}
