@@ -1,0 +1,17 @@
+{
+  "done": {
+    "script": "lua:done_check"
+  },
+  "reward": {
+    "script": "lua:check_reward_with_time_penalty"
+  },
+  "scripts": [
+    "script.lua"
+  ],
+  "crop": [0, 16, 256, 200],
+  "actions": [
+      [[], ["UP"], ["DOWN"]],
+      [[], ["LEFT"], ["RIGHT"]],
+      [[], ["A"], ["B"], ["L"], ["X"], ["Y"], ["R"]]
+  ]
+}

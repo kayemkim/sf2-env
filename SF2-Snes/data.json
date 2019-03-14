@@ -4,6 +4,10 @@
       "address": 1348,
       "type": "<u1"
     },
+    "is_p1_in_move": {
+      "address": 1513,
+      "type": "<u1"
+    },
     "is_p1_jumping": {
       "address": 1514,
       "type": "<u1"
@@ -12,33 +16,65 @@
       "address": 1860,
       "type": "<u1"
     },
-    "p1_in_move": {
-      "address": 1513,
-      "type": ">u1"
+    "is_p2_in_move": {
+      "address": 2025,
+      "type": "<u1"
+    },
+    "is_p2_jumping": {
+      "address": 2026,
+      "type": "<u1"
+    },
+    "p1_character": {
+      "address": 1489,
+      "type": "<u1"
+    },
+    "p1_health": {
+      "address": 1328,
+      "type": "<u1"
     },
     "p1_move": {
       "address": 1509,
-      "type": "<u1"
+      "type": "<u4"
     },
     "p1_x": {
       "address": 34,
       "type": "<u2"
     },
-    "p2_in_move": {
-      "address": 2025,
-      "type": ">u1"
+    "p1_y": {
+      "address": 1290,
+      "type": "<u1"
+    },
+    "p2_character": {
+      "address": 2001,
+      "type": "<u1"
+    },
+    "p2_health": {
+      "address": 1840,
+      "type": "<u1"
     },
     "p2_move": {
       "address": 2021,
-      "type": ">u1"
+      "type": "<u4"
     },
-    "p_hight_delta": {
+    "p2_x": {
+      "address": 38,
+      "type": "<u2"
+    },
+    "p2_y": {
+      "address": 1802,
+      "type": "<u1"
+    },
+    "p_height_delta": {
       "address": 1517,
-      "type": "|u1"
+      "type": "<u1"
     },
     "p_width_delta": {
       "address": 2027,
-      "type": "|u1"
+      "type": "<u1"
+    },
+    "timer": {
+      "address": 6387,
+      "type": "<u1"
     }
   }
 }
